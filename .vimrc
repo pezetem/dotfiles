@@ -16,4 +16,14 @@ runtime! archlinux.vim
 
 "let skip_defaults_vim=1
 
-:set number
+set number
+set hlsearch
+set background=dark
+
+"=====VIM-PLUG=========
+call plug#begin('~/.vim/plugged')
+
+Plug 'airblade/vim-gitgutter'
+Plug 'morhetz/gruvbox'
+
+call plug#end()
